@@ -123,3 +123,17 @@ ul {
   font-size: 22px;
   color: rgb(87, 109, 122);
 }
+a:link,
+a:active,
+a:hover,
+a:visited {
+  color: rgb(69, 154, 244);
+  font-size: 15px;
+}
+
+.projectLink {
+  position: relative;
+  top: 210px;
+  text-align: center;
+  margin-right: 200px;
+}
