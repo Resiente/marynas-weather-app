@@ -1,0 +1,125 @@
+.search {
+  padding: 10px;
+  font-size: 24px;
+  position: fixed;
+  right: 100px;
+  top: 30px;
+}
+body {
+  font-family: inter;
+}
+input[type="search"] {
+  font-style: italic;
+  font-size: 16px;
+  max-width: 200px;
+  padding: 6px;
+  border: solid 1px rgba(87, 109, 122, 0.7);
+  border-radius: 3px;
+}
+input[type="submit"] {
+  font-size: 16px;
+  background-color: rgb(69, 154, 244);
+  padding: 7px 20px;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgb(185, 211, 225);
+}
+.fa-globe {
+  color: rgb(87, 109, 122);
+}
+.weatherInfo {
+  display: inline-block;
+  position: relative;
+  top: 100px;
+  max-width: 300px;
+  margin: 0;
+  padding: 40px 30px;
+  background-color: rgba(69, 154, 244, 0.2);
+}
+
+.currentCity {
+  position: relative;
+  top: 130px;
+  text-align: center;
+  font-size: 40px;
+  margin-right: 160px;
+}
+.currentCityName {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.currentCityDate {
+  text-align: left;
+  font-weight: 400;
+  font-size: 36px;
+  color: rgb(87, 109, 122);
+}
+.currentTemp,
+.currentIcon {
+  font-size: 46px;
+  font-weight: 400;
+  text-align: center;
+}
+#currentHumidity,
+#currentWind {
+  font-weight: 600;
+}
+.sup {
+  color: rgb(69, 154, 244);
+  font-size: 26px;
+  vertical-align: super;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+.currentConditions {
+  display: inline-block;
+  position: relative;
+  top: 100px;
+  padding: 51px 20px;
+  max-width: 200px;
+  color: rgb(87, 109, 122);
+  background-color: rgba(69, 154, 244, 0.1);
+  font-weight: 400;
+}
+
+.fiveDayForecast {
+  position: relative;
+  top: 190px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.fiveDayForecast .col-2 {
+  background-color: rgba(69, 154, 244, 0.1);
+  padding: 10px;
+  margin-right: 5px;
+}
+.weatherIcon {
+  font-size: 30px;
+}
+.fa-sun {
+  color: rgb(247, 205, 17);
+}
+.fa-cloud,
+.fa-cloud-rain,
+.fa-cloud-sun,
+.fa-cloud-sun-rain {
+  color: rgb(69, 154, 244);
+}
+
+.dayTemp {
+  font-size: 26px;
+  font-weight: bold;
+}
+.dayNightTemp {
+  font-size: 18px;
+  color: rgb(87, 109, 122);
+}
+.dayDate {
+  font-size: 22px;
+  color: rgb(87, 109, 122);
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather forecast</title>
+  <script src="https://kit.fontawesome.com/0ebb077aad.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="src/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <form class="search">
+      <label for="search"><i class="fa-solid fa-globe"></i></label>
+      <input type="search" id="city-input" placeholder="search your city..." />
+      <input type="submit" value="Find">
+    </form>
+    <div class="weatherInfo">
+      <div class="currentTemp"><span id="temp">25</span><span class="sup">℃</span>
+        <span class="currentIcon"><i class="fa-solid fa-sun"></i></span>
+      </div>
+    </div>
+    <ul class="currentConditions">
+      <li>Wind: <span id="currentWind">24</span>kmh</li>
+      <li>Humidity: <span id="currentHumidity">30</span>%</li>
+    </ul>
+    <p class="currentCity">
+      <span class="currentCityName" id="city">
+        Estepona</span>
+      <span class="currentCityDate" id="todayDate">
+        Sat.28/05
+      </span>
+    </p>
+    <div class="fiveDayForecast">
+      <div class="row dayDate">
+        <div class="col-2">Sun. 29/05</div>
+        <div class="col-2">Mon. 30/05</div>
+        <div class="col-2">Tue. 31/05</div>
+        <div class="col-2">Wed. 01/06</div>
+        <div class="col-2">Thur. 02/06</div>
+      </div>
+      <div class="row weatherIcon">
+        <div class="col-2"><i class="fa-solid fa-cloud-sun-rain"></i></div>
+        <div class="col-2"><i class="fa-solid fa-sun"></i></div>
+        <div class="col-2"><i class="fa-solid fa-cloud-sun"></i></div>
+        <div class="col-2"><i class="fa-solid fa-cloud-rain"></i></div>
+        <div class="col-2"><i class="fa-solid fa-cloud"></i></div>
+      </div>
+      <div class="row dayTemp">
+        <div class="col-2">25℃</div>
+        <div class="col-2">26℃</div>
+        <div class="col-2">27℃</div>
+        <div class="col-2">24℃</div>
+        <div class="col-2">23℃</div>
+      </div>
+      <div class="row dayNightTemp">
+        <div class="col-2">25℃/17℃</div>
+        <div class="col-2">26℃/18℃</div>
+        <div class="col-2">27℃/16℃</div>
+        <div class="col-2">24℃/14℃</div>
+        <div class="col-2">23℃/14℃</div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</body>
+<script src="src/app.js"></script>
+
+</html>
