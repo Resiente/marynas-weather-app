@@ -41,6 +41,18 @@ function showCurrentCity(position) {
     currentHumidity.innerHTML = response.data.main.humidity;
     let currentWind = document.querySelector("#currentWind");
     currentWind.innerHTML = Math.round(response.data.wind.speed);
+    function changeToCelcius() {
+      let celciusTemp = document.querySelector("#temp");
+      celciusTemp.innerHTML = Math.round(response.data.main.temp);
+    }
+    function changeToFarengheit() {
+      let farengheitTemp = document.querySelector("#temp");
+      farengheitTemp.innerHTML = Math.round(response.data.main.temp + 32);
+    }
+    let celciusUnits = document.querySelector("#celciusTemp");
+    let farengheitUnits = document.querySelector("#farengheitTemp");
+    celciusUnits.addEventListener("click", changeToCelcius);
+    farengheitUnits.addEventListener("click", changeToFarengheit);
   }
 }
 
@@ -61,6 +73,18 @@ function changeCity(event) {
     searchCityHumidity.innerHTML = response.data.main.humidity;
     let searchCitytWind = document.querySelector("#currentWind");
     searchCitytWind.innerHTML = Math.round(response.data.wind.speed);
+    function changeToCelcius() {
+      let celciusTemp = document.querySelector("#temp");
+      celciusTemp.innerHTML = Math.round(response.data.main.temp);
+    }
+    function changeToFarengheit() {
+      let farengheitTemp = document.querySelector("#temp");
+      farengheitTemp.innerHTML = Math.round(response.data.main.temp + 32);
+    }
+    let celciusUnits = document.querySelector("#celciusTemp");
+    let farengheitUnits = document.querySelector("#farengheitTemp");
+    celciusUnits.addEventListener("click", changeToCelcius);
+    farengheitUnits.addEventListener("click", changeToFarengheit);
   }
 }
 let searchInput = document.querySelector(".search");

@@ -70,6 +70,9 @@ input[type="submit"] {
   font-size: 26px;
   vertical-align: super;
 }
+.sup a:link {
+  text-decoration: none;
+}
 
 ul {
   list-style: none;
@@ -128,7 +131,6 @@ a:active,
 a:hover,
 a:visited {
   color: rgb(69, 154, 244);
-  font-size: 15px;
 }
 
 .projectLink {
@@ -136,4 +138,5 @@ a:visited {
   top: 210px;
   text-align: center;
   margin-right: 200px;
+  font-size: 15px;
 }
