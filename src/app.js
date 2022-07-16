@@ -41,6 +41,11 @@ function showCurrentCity(position) {
     currentHumidity.innerHTML = response.data.main.humidity;
     let currentWind = document.querySelector("#currentWind");
     currentWind.innerHTML = Math.round(response.data.wind.speed);
+    let mainIcon = document.querySelector("#mainIcon");
+    mainIcon.setAttribute(
+      "src",
+      `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    );
     function changeToCelcius() {
       let celciusTemp = document.querySelector("#temp");
       celciusTemp.innerHTML = Math.round(response.data.main.temp);
@@ -73,6 +78,11 @@ function changeCity(event) {
     searchCityHumidity.innerHTML = response.data.main.humidity;
     let searchCitytWind = document.querySelector("#currentWind");
     searchCitytWind.innerHTML = Math.round(response.data.wind.speed);
+    let mainIcon = document.querySelector("#mainIcon");
+    mainIcon.setAttribute(
+      "src",
+      `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    );
     function changeToCelcius() {
       let celciusTemp = document.querySelector("#temp");
       celciusTemp.innerHTML = Math.round(response.data.main.temp);

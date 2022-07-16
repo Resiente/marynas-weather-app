@@ -55,11 +55,13 @@ input[type="submit"] {
   font-size: 36px;
   color: rgb(87, 109, 122);
 }
-.currentTemp,
-.currentIcon {
+.currentTemp {
   font-size: 46px;
   font-weight: 400;
   text-align: center;
+}
+#mainIcon {
+  max-height: 80px;
 }
 #currentHumidity,
 #currentWind {
