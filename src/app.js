@@ -52,7 +52,9 @@ function showCurrentCity(position) {
     }
     function changeToFarengheit() {
       let farengheitTemp = document.querySelector("#temp");
-      farengheitTemp.innerHTML = Math.round(response.data.main.temp + 32);
+      farengheitTemp.innerHTML = Math.round(
+        (response.data.main.temp * 9) / 5 + 32
+      );
     }
     let celciusUnits = document.querySelector("#celciusTemp");
     let farengheitUnits = document.querySelector("#farengheitTemp");
@@ -89,7 +91,9 @@ function changeCity(event) {
     }
     function changeToFarengheit() {
       let farengheitTemp = document.querySelector("#temp");
-      farengheitTemp.innerHTML = Math.round(response.data.main.temp + 32);
+      farengheitTemp.innerHTML = Math.round(
+        (response.data.main.temp * 9) / 5 + 32
+      );
     }
     let celciusUnits = document.querySelector("#celciusTemp");
     let farengheitUnits = document.querySelector("#farengheitTemp");
