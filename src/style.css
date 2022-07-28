@@ -29,7 +29,7 @@ input[type="submit"] {
 .fa-globe {
   color: rgb(87, 109, 122);
 }
-.weatherInfo {
+.weather-info {
   display: inline-block;
   position: relative;
   top: 100px;
@@ -39,24 +39,24 @@ input[type="submit"] {
   background-color: rgba(69, 154, 244, 0.2);
 }
 
-.currentCity {
+.current-city {
   position: relative;
   top: 130px;
   text-align: center;
   font-size: 40px;
   margin-right: 160px;
 }
-.currentCityName {
+.current-city-name {
   font-weight: 600;
   text-transform: capitalize;
 }
-.currentCityDate {
+.current-city-date {
   text-align: left;
   font-weight: 400;
   font-size: 36px;
   color: rgb(87, 109, 122);
 }
-.currentTemp {
+.current-temperature {
   font-size: 46px;
   font-weight: 400;
   text-align: center;
@@ -88,7 +88,7 @@ ul {
   list-style: none;
   margin: 0;
 }
-.currentConditions {
+.current-conditions {
   display: inline-block;
   position: relative;
   top: 100px;
@@ -100,40 +100,35 @@ ul {
   font-weight: 400;
 }
 
-.fiveDayForecast {
+.five-day-forecast {
   position: relative;
   top: 190px;
   text-align: center;
   margin: 0 auto;
 }
 
-.fiveDayForecast .col-2 {
+.five-day-forecast .col-2 {
   background-color: rgba(69, 154, 244, 0.1);
   padding: 10px;
   margin-right: 5px;
 }
-.weatherIcon {
-  font-size: 30px;
-}
-.fa-sun {
-  color: rgb(247, 205, 17);
-}
-.fa-cloud,
-.fa-cloud-rain,
-.fa-cloud-sun,
-.fa-cloud-sun-rain {
-  color: rgb(69, 154, 244);
+.weather-icon {
+  width: 40px;
 }
 
-.dayTemp {
+.forecast-average-temperature {
   font-size: 26px;
   font-weight: bold;
 }
-.dayNightTemp {
+.forecast-night-temperature {
   font-size: 18px;
   color: rgb(87, 109, 122);
+  opacity: 0.5;
 }
-.dayDate {
+.forecast-day-temperature {
+  font-size: 18px;
+}
+.forecast-day-date {
   font-size: 22px;
   color: rgb(87, 109, 122);
 }

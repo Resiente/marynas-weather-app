@@ -24,51 +24,33 @@
       <input type="search" id="city-input" placeholder="search your city..." />
       <input type="submit" value="Find">
     </form>
-    <div class="weatherInfo">
-      <div class="currentTemp"><span id="temp">25</span><span class="sup"><a href="#" id="celciusTemp"
+    <div class="weather-info">
+      <div class="current-temperature"><span id="temp">25</span><span class="sup"><a href="#" id="celciusTemp"
             class="active">℃</a>|<a href="#" id="farengheitTemp">℉</a></span>
-        <span class="currentIcon"><img src="" alt="" id="mainIcon"></span>
+        <img src="" alt="" id="mainIcon">
       </div>
     </div>
-    <ul class="currentConditions">
+    <ul class="current-conditions">
       <li>Wind: <span id="currentWind">24</span>kmh</li>
       <li>Humidity: <span id="currentHumidity">30</span>%</li>
     </ul>
-    <p class="currentCity">
-      <span class="currentCityName" id="city">
+    <p class="current-city">
+      <span class="current-city-name" id="city">
         Estepona</span>
-      <span class="currentCityDate" id="todayDate">
+      <span class="current-city-date" id="todayDate">
         Sat.28/05
       </span>
     </p>
-    <div class="fiveDayForecast">
-      <div class="row dayDate">
-        <div class="col-2">Sun. 29/05</div>
-        <div class="col-2">Mon. 30/05</div>
-        <div class="col-2">Tue. 31/05</div>
-        <div class="col-2">Wed. 01/06</div>
-        <div class="col-2">Thur. 02/06</div>
-      </div>
-      <div class="row weatherIcon">
-        <div class="col-2"><i class="fa-solid fa-cloud-sun-rain"></i></div>
-        <div class="col-2"><i class="fa-solid fa-sun"></i></div>
-        <div class="col-2"><i class="fa-solid fa-cloud-sun"></i></div>
-        <div class="col-2"><i class="fa-solid fa-cloud-rain"></i></div>
-        <div class="col-2"><i class="fa-solid fa-cloud"></i></div>
-      </div>
-      <div class="row dayTemp">
-        <div class="col-2">25℃</div>
-        <div class="col-2">26℃</div>
-        <div class="col-2">27℃</div>
-        <div class="col-2">24℃</div>
-        <div class="col-2">23℃</div>
-      </div>
-      <div class="row dayNightTemp">
-        <div class="col-2">25℃/17℃</div>
-        <div class="col-2">26℃/18℃</div>
-        <div class="col-2">27℃/16℃</div>
-        <div class="col-2">24℃/14℃</div>
-        <div class="col-2">23℃/14℃</div>
+    <div class="five-day-forecast">
+      <div class="row">
+        <div class="col-2">
+          <div class="forecast-day-date">Sun. 29/05</div>
+          <img src="http://openweathermap.org/img/wn/02d@2x.png" class="weather-icon" alt="">
+          <div class="forecast-average-temperature">25℃</div>
+          <span class="forecast-day-temperature">25/</span>
+          <span class="forecast-night-temperature">17</span>
+        </div>
+
       </div>
     </div>
     <div class="projectLink"><a href="https://github.com/Resiente/marynas-weather-app/blob/main/index.html">View this
