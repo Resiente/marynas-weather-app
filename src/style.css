@@ -77,11 +77,14 @@ input[type="submit"] {
 a:active,
 a:hover a:visited {
   color: rgb(69, 154, 244);
+  text-decoration: none;
 }
 .active {
-  text-decoration: none;
   color: rgb(87, 109, 122);
   cursor: default;
+}
+.active:hover {
+  color: rgb(87, 109, 122);
 }
 
 ul {
