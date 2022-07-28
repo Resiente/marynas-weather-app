@@ -1,3 +1,6 @@
+body {
+  font-family: inter;
+}
 .search {
   padding: 10px;
   font-size: 24px;
@@ -5,9 +8,7 @@
   right: 100px;
   top: 30px;
 }
-body {
-  font-family: inter;
-}
+
 input[type="search"] {
   font-style: italic;
   font-size: 16px;
@@ -72,8 +73,15 @@ input[type="submit"] {
   font-size: 26px;
   vertical-align: super;
 }
-.sup a:link {
+.sup a:link,
+a:active,
+a:hover a:visited {
+  color: rgb(69, 154, 244);
+}
+.active {
   text-decoration: none;
+  color: rgb(87, 109, 122);
+  cursor: default;
 }
 
 ul {
@@ -86,6 +94,7 @@ ul {
   top: 100px;
   padding: 51px 20px;
   max-width: 200px;
+  margin-bottom: 0;
   color: rgb(87, 109, 122);
   background-color: rgba(69, 154, 244, 0.1);
   font-weight: 400;
@@ -127,12 +136,6 @@ ul {
 .dayDate {
   font-size: 22px;
   color: rgb(87, 109, 122);
-}
-a:link,
-a:active,
-a:hover,
-a:visited {
-  color: rgb(69, 154, 244);
 }
 
 .projectLink {
