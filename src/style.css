@@ -1,18 +1,26 @@
 body {
   font-family: inter;
 }
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.header {
+  position: relative;
+  top: 40px;
+  background-color: rgb(87, 109, 122);
+}
 .search {
   padding: 10px;
   font-size: 24px;
-  position: fixed;
-  right: 100px;
-  top: 30px;
+  max-width: 330px;
+  margin: 0 auto;
 }
 
 input[type="search"] {
-  font-style: italic;
   font-size: 16px;
-  max-width: 200px;
+  max-width: 180px;
   padding: 6px;
   border: solid 1px rgba(87, 109, 122, 0.7);
   border-radius: 3px;
@@ -24,10 +32,9 @@ input[type="submit"] {
   color: #fff;
   border: none;
   border-radius: 3px;
-  box-shadow: 0 1px 3px rgb(185, 211, 225);
 }
 .fa-globe {
-  color: rgb(87, 109, 122);
+  color: #fff;
 }
 .weather-info {
   display: inline-block;
@@ -44,7 +51,7 @@ input[type="submit"] {
   top: 130px;
   text-align: center;
   font-size: 40px;
-  margin-right: 160px;
+  margin: 0 auto;
 }
 .current-city-name {
   font-weight: 600;
@@ -105,12 +112,12 @@ ul {
 
 .five-day-forecast {
   position: relative;
-  top: 190px;
+  top: 170px;
   text-align: center;
   margin: 0 auto;
 }
 
-.five-day-forecast .col-2 {
+.five-day-forecast .col {
   background-color: rgba(69, 154, 244, 0.1);
   padding: 10px;
   margin-right: 5px;
@@ -123,12 +130,12 @@ ul {
   font-size: 26px;
   font-weight: bold;
 }
-.forecast-night-temperature {
+.forecas-min-temperature {
   font-size: 18px;
   color: rgb(87, 109, 122);
   opacity: 0.5;
 }
-.forecast-day-temperature {
+.forecast-max-temperature {
   font-size: 18px;
 }
 .forecast-day-date {
@@ -140,6 +147,6 @@ ul {
   position: relative;
   top: 210px;
   text-align: center;
-  margin-right: 200px;
+  margin: 0 auto;
   font-size: 15px;
 }

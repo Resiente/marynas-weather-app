@@ -53,7 +53,7 @@ function showCurrentCity(position) {
       "src",
       `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
     );
-    displayForecast();
+    searchForecast();
   }
 }
 
@@ -101,12 +101,16 @@ function changeCity(event) {
       "src",
       `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
     );
-    let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&exclude=hourly,historical,minutely&lon=${lon}&units=metric&appid=${apiKey}`;
-    axios.get(apiUrl).then(displayForecast);
+
+    searchForecast();
   }
 }
+function searchForecast() {
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&exclude=hourly,historical,minutely&lon=${lon}&units=metric&appid=${apiKey}`;
+  axios.get(apiUrl).then(displayForecast);
+}
 function displayForecast(response) {
-  console.log(response);
+  console.log(response.data.daily);
 
   let fiveDayForecast = document.querySelector("#forecast");
   let forecastHTML = `<div class="row">`;
@@ -114,12 +118,12 @@ function displayForecast(response) {
   days.forEach(function (day) {
     forecastHTML =
       forecastHTML +
-      `<div class="col-2">
+      `<div class="col">
           <div class="forecast-day-date">${day}</div>
           <img src="http://openweathermap.org/img/wn/02d@2x.png" class="weather-icon" alt="">
           <div class="forecast-average-temperature">25℃</div>
-          <span class="forecast-day-temperature">25/</span>
-          <span class="forecast-night-temperature">17</span>
+          <span class="forecast-max-temperature">25/</span>
+          <span class="forecast-min-temperature">17</span>
         </div>`;
   });
   forecastHTML = forecastHTML + `</div>`;
