@@ -1,9 +1,9 @@
 body {
   font-family: inter;
 }
-.wrapper {
+
+.container-fluid {
   max-width: 1000px;
-  margin: 0 auto;
 }
 
 .header {
@@ -40,37 +40,37 @@ input[type="submit"] {
   display: inline-block;
   position: relative;
   top: 100px;
-  max-width: 300px;
+  max-width: 280px;
   margin: 0;
-  padding: 40px 30px;
-  background-color: rgba(69, 154, 244, 0.2);
+  margin-right: 3px;
+  padding: 40px 20px;
+  background-color: rgba(69, 154, 244, 0.4);
 }
 
-.current-city {
-  position: relative;
-  top: 130px;
-  text-align: center;
-  font-size: 40px;
-  margin: 0 auto;
-}
-.current-city-name {
-  font-weight: 600;
-  text-transform: capitalize;
-}
-.current-city-date {
-  text-align: left;
-  font-weight: 400;
-  font-size: 36px;
-  color: rgb(87, 109, 122);
-}
 .current-temperature {
   font-size: 46px;
   font-weight: 400;
   text-align: center;
 }
 #mainIcon {
-  max-height: 80px;
+  height: 60px;
+  width: 100px;
+  object-fit: cover;
+  object-position: left;
+  margin-top: -16px;
 }
+.current-conditions {
+  display: inline-block;
+  position: relative;
+  top: 100px;
+  padding: 50px 20px;
+  max-width: 200px;
+  margin-bottom: 0;
+  color: rgb(87, 109, 122);
+  background-color: rgba(69, 154, 244, 0.2);
+  font-weight: 400;
+}
+
 #currentHumidity,
 #currentWind {
   font-weight: 600;
@@ -98,18 +98,24 @@ ul {
   list-style: none;
   margin: 0;
 }
-.current-conditions {
-  display: inline-block;
-  position: relative;
-  top: 100px;
-  padding: 51px 20px;
-  max-width: 200px;
-  margin-bottom: 0;
-  color: rgb(87, 109, 122);
-  background-color: rgba(69, 154, 244, 0.1);
-  font-weight: 400;
-}
 
+.current-city {
+  position: relative;
+  top: 130px;
+  text-align: center;
+  font-size: 40px;
+  margin: 0 auto;
+}
+.current-city-name {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.current-city-date {
+  text-align: left;
+  font-weight: 400;
+  font-size: 36px;
+  color: rgb(87, 109, 122);
+}
 .five-day-forecast {
   position: relative;
   top: 170px;
@@ -118,9 +124,8 @@ ul {
 }
 
 .five-day-forecast .col {
-  background-color: rgba(69, 154, 244, 0.1);
-  padding: 10px;
-  margin-right: 5px;
+  background-color: rgba(69, 154, 244, 0.2);
+  padding: 10px 0;
 }
 .weather-icon {
   width: 40px;
@@ -130,7 +135,7 @@ ul {
   font-size: 26px;
   font-weight: bold;
 }
-.forecas-min-temperature {
+.forecast-min-temperature {
   font-size: 18px;
   color: rgb(87, 109, 122);
   opacity: 0.5;
@@ -139,7 +144,7 @@ ul {
   font-size: 18px;
 }
 .forecast-day-date {
-  font-size: 22px;
+  font-size: 18px;
   color: rgb(87, 109, 122);
 }
 
