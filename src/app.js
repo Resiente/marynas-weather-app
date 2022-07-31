@@ -101,6 +101,8 @@ function changeCity(event) {
       "src",
       `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
     );
+    farengheitUnits.classList.remove("active");
+    celciusUnits.classList.add("active");
 
     searchForecast();
   }
